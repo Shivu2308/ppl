@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import SuccessModal from './SuccessModal';
+import { useNavigate } from 'react-router-dom';
 
 const PlayerForm = () => {
   const [formData, setFormData] = useState({
@@ -9,6 +10,8 @@ const PlayerForm = () => {
     role: '', battingHand: '', battingPosition: '',
     bowlingHand: '', bowlingType: '', utrNumber: '' // UTR field added
   });
+
+  const navigate = useNavigate();
 
   const [playerPhoto, setPlayerPhoto] = useState(null);
   const [aadharPhoto, setAadharPhoto] = useState(null);
@@ -277,7 +280,9 @@ const PlayerForm = () => {
           playerDetails={registeredData}
           onClose={() => {
             setShowModal(false);
-            window.location.reload(); // Page refresh taaki naya registration ho sake
+            // navigate(0); // Ye refresh ka behtar option hai React Router mein
+            // YA FIR
+            navigate('/'); // Direct home page par bhejne ke liye
           }}
         />
       )}

@@ -6,7 +6,7 @@ const QRPage = () => {
   const navigate = useNavigate();
 
   // Yahan apna UPI ID aur Amount daal dena
-  const upiId = "yourname@upi"; 
+  const upiId = "9770395871@ibl"; 
   const amount = "500"; // Jo bhi fees ho
   
   // GPay/PhonePe direct open karne ke liye link (Optional)

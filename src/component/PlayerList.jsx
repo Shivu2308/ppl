@@ -47,9 +47,7 @@ const PlayerList = () => {
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
             />
-            <div className="hidden md:flex items-center px-4 bg-green-50 text-green-700 rounded-xl font-black text-[10px] uppercase border border-green-100">
-              {filteredPlayers.length} Active Stars
-            </div>
+
           </div>
         </div>
 
@@ -84,7 +82,7 @@ const PlayerList = () => {
                           className="w-16 h-16 rounded-2xl object-cover border-2 border-gray-100 shadow-sm" 
                           alt="PPL Player" 
                         />
-                        <div className="absolute -bottom-1 -right-1 bg-green-500 w-4 h-4 rounded-full border-2 border-white shadow-sm"></div>
+
                       </div>
                     </td>
 
@@ -104,7 +102,7 @@ const PlayerList = () => {
 
                     {/* 4. Role & Style (Admin Condition Logic) */}
                     <td className="px-6 py-4">
-                      <div className="bg-slate-50 p-2 rounded-xl border border-slate-100 inline-block min-w-[1600] lg:min-w-[180px]">
+                      <div className="bg-slate-50 p-2 rounded-xl border border-slate-100 inline-block min-w-[120px] lg:min-w-[180px]">
                         <p className="text-[11px] font-black text-slate-900 uppercase underline decoration-blue-400 mb-1">
                           {player.role}
                         </p>
@@ -121,7 +119,7 @@ const PlayerList = () => {
                         {player.role === 'Bowler' && (
                           <>
                             <p className="text-[10px] font-bold text-slate-500">{player.bowlingHand}</p>
-                            <p className="text-[10px] font-bold text-slate-500">Style: {player.bowlingType}</p>
+                            <p className="text-[10px] font-bold text-slate-500">Bowling Type: {player.bowlingType}</p>
                           </>
                         )}
 
@@ -129,8 +127,8 @@ const PlayerList = () => {
                         {player.role === 'Allrounder' && (
                           <>
                             <p className="text-[10px] font-bold text-slate-600 font-black italic">{player.battingHand}</p>
-                            <p className="text-[10px] font-bold text-slate-500"> {player.battingPosition}</p>
-                            <p className="text-[10px] font-bold text-slate-500">Order: {player.bowlingType}</p>
+                            <p className="text-[10px] font-bold text-slate-500">Order: {player.battingPosition}</p>
+                            <p className="text-[10px] font-bold text-slate-500">Bowling Type: {player.bowlingType}</p>
                           </>
                         )}
                       </div>

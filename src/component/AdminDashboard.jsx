@@ -188,7 +188,7 @@ const AdminDashboard = () => {
                         {player.role === 'Bowler' && (
                           <>
                             <p className="text-[10px] font-bold text-slate-500">{player.bowlingHand}</p>
-                            <p className="text-[10px] font-bold text-slate-500">Style: {player.bowlingType}</p>
+                            <p className="text-[10px] font-bold text-slate-500">Bowling Style: {player.bowlingType}</p>
                           </>
                         )}
 
@@ -197,7 +197,7 @@ const AdminDashboard = () => {
                           <>
                             <p className="text-[10px] font-bold text-slate-600 font-black italic">{player.battingHand}</p>
                             <p className="text-[10px] font-bold text-slate-500"> {player.battingPosition}</p>
-                            <p className="text-[10px] font-bold text-slate-500">Order: {player.bowlingType}</p>
+                            <p className="text-[10px] font-bold text-slate-500">Bowling Style:: {player.bowlingType}</p>
                           </>
                         )}
                       </div>

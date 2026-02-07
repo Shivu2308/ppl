@@ -6,9 +6,9 @@ import { useNavigate } from 'react-router-dom';
 const PlayerForm = () => {
   const [formData, setFormData] = useState({
     playerName: '', fatherName: '', dob: '', aadharNumber: '',
-    mobileNumber: '', village: '', block: '', district: '', // Village field added
+    mobileNumber: '', village: '', block: '', district: '',
     role: '', battingHand: '', battingPosition: '',
-    bowlingHand: '', bowlingType: '', utrNumber: '' // UTR field added
+    bowlingHand: '', bowlingType: ''
   });
 
   const navigate = useNavigate();
@@ -64,12 +64,11 @@ const PlayerForm = () => {
       if (res.data.success) {
         setRegisteredData({
           playerName: formData.playerName,
-          fatherName: formData.fatherName, // Ye add kiya
+          fatherName: formData.fatherName,
           role: formData.role,
-          village: formData.village,     // Ye add kiya
+          village: formData.village,
           district: formData.district,
-          block: formData.block,         // Ye add kiya
-          utrNumber: formData.utrNumber, // Ye add kiya
+          block: formData.block,
           photoUrl: URL.createObjectURL(playerPhoto)
         });
         setShowModal(true);
@@ -108,7 +107,7 @@ const PlayerForm = () => {
               </div>
               <div>
                 <label className={labelClass}>Date of Birth</label>
-                <input type="date" name="dob" className={inputClass} onChange={handleChange} required />
+                <input type="text" name="dob" className={inputClass} placeholder="DD/MM/YY" onChange={handleChange} required />
               </div>
               <div>
                 <label className={labelClass}>Aadhar Number</label>
@@ -245,21 +244,7 @@ const PlayerForm = () => {
               </div>
             </div>
 
-            {/* UTR Input (Very Important for manual verification) */}
-            <div className="bg-yellow-50 p-4 rounded-xl border-2 border-yellow-200">
-              <label className="block mb-1 text-sm font-black text-yellow-900 uppercase">Transaction ID / UTR </label>
-              <input
-                type="text"
-                name="utrNumber"
-                placeholder="Enter your Transaction ID(UTR) number"
-                className={`${inputClass} border-yellow-400 font-mono text-lg uppercase`}
-                maxLength="12"
-                onChange={handleChange}
-                required
-              />
-              <p className="text-[10px] text-yellow-700 mt-2 font-bold italic">* Galat Transaction ID(UTR) dalne par registration reject kar diya jayega.</p>
-            </div>
-
+            
             {/* Final Payment Button */}
             <button
               type="submit"

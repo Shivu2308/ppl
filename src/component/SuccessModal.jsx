@@ -88,11 +88,6 @@ const SuccessModal = ({ isOpen, playerDetails, onClose }) => {
                 </div>
               </div>
 
-              {/* Transaction Box */}
-              <div style={{ backgroundColor: '#fff7ed', border: '1px solid #ffedd5' }} className="flex justify-between items-center p-2 rounded-lg mt-2">
-                <span style={{ color: '#ea580c' }} className="text-[10px] font-black uppercase">UTR / Ref No.</span>
-                <span style={{ color: '#9a3412' }} className="text-xs font-mono font-black">{playerDetails.utrNumber}</span>
-              </div>
 
               {/* Status Box */}
               <div style={{ backgroundColor: '#f0f9ff', border: '1px solid #e0f2fe' }} className="flex justify-between items-center p-2 rounded-lg">

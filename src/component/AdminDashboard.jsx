@@ -134,7 +134,7 @@ const AdminDashboard = () => {
                   <th className="px-6 py-5">Player Personal Details</th>
                   <th className="px-6 py-5">Aadhar Info</th>
                   <th className="px-6 py-5">Role & Style</th>
-                  <th className="px-6 py-5">Payment & UTR</th>
+                  <th className="px-6 py-5">Payment</th>
                   <th className="px-6 py-5 text-center">Manage</th>
                 </tr>
               </thead>
@@ -205,8 +205,6 @@ const AdminDashboard = () => {
 
                     {/* 5. Payment Screenshot & UTR */}
                     <td className="px-6 py-4">
-                      <p className="font-mono font-black text-orange-600 bg-orange-50 px-2 py-1 rounded text-xs mb-2 inline-block">UTR: {player.utrNumber}</p>
-                      <br />
                       <a href={player.paymentScreenshot} target="_blank" rel="noreferrer" className="text-[10px] font-black text-orange-400 hover:underline uppercase flex items-center gap-1">
                         View Receipt ↗
                       </a>

@@ -52,12 +52,12 @@ const Home = () => {
 
           {/* Action Buttons */}
           <div className="flex flex-col md:flex-row gap-6 mt-6 w-full justify-center">
-            <Link to="/pay-to-register" className="group relative">
+            {/* <Link to="/pay-to-register" className="group relative"> */}
               <div className="absolute -inset-0.5 bg-orange-600 rounded-lg blur opacity-30 group-hover:opacity-100 transition duration-1000"></div>
               <button className="relative bg-orange-600 hover:bg-orange-700 text-white text-2xl font-bold py-5 px-12 rounded-lg transition-all transform hover:scale-105 shadow-xl w-full">
-                Register Now 🏏
+                Registration Closed 🏏
               </button>
-            </Link>
+            {/* </Link> */}
           </div>
         </div>
 

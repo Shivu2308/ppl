@@ -69,8 +69,8 @@ const Header = () => {
               </Link>
             )}
 
-            <Link to="/pay-to-register" className="bg-orange-600 text-white px-5 py-2 rounded-full hover:bg-orange-700 transition shadow-md shadow-orange-200">
-              REGISTER NOW
+            <Link to="" className="bg-orange-600 text-white px-5 py-2 rounded-full hover:bg-orange-700 transition shadow-md shadow-orange-200">
+              REGISTRATION CLOSED 
             </Link>
           </div>
 

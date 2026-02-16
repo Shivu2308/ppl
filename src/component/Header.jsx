@@ -111,8 +111,8 @@ const Header = () => {
             </Link>
           )}
 
-          <Link to="/pay-to-register" onClick={() => setIsOpen(false)} className="block bg-orange-600 text-white text-center py-2 rounded-lg font-bold">
-            REGISTER NOW
+          <Link to="" onClick={() => setIsOpen(false)} className="block bg-orange-600 text-white text-center py-2 rounded-lg font-bold">
+            REGISTRATION CLOSED
           </Link>
         </div>
       )}

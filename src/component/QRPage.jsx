@@ -60,7 +60,7 @@ const QRPage = () => {
 
           {/* Proceed Button */}
           <button 
-            onClick={() => navigate('/register')}
+            {/* onClick={() => navigate('/register')} */}
             className="w-full bg-[#1e293b] hover:bg-orange-600 text-white py-5 rounded-2xl font-black tracking-widest transition-all shadow-xl active:scale-95 flex items-center justify-center gap-3 group"
           >
             I HAVE PAID — FILL FORM
